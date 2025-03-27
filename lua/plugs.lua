@@ -36,7 +36,6 @@ Plug 'vim-scripts/autoclose'
 Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
 Plug 'nvim-lualine/lualine.nvim'
-Plug 'startup-nvim/startup.nvim'
 Plug 'tanvirtin/vgit.nvim'
 Plug 'instant-markdown/vim-instant-markdown'
 Plug 'neovim/nvim-lspconfig'
@@ -62,4 +61,5 @@ Plug "rose-pine/neovim"
 Plug 'nvzone/volt'
 Plug 'nvzone/menu'
 Plug 'sphamba/smear-cursor.nvim'
+Plug 'startup-nvim/startup.nvim'
 vim.call('plug#end')
