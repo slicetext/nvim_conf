@@ -62,4 +62,6 @@ Plug 'nvzone/volt'
 Plug 'nvzone/menu'
 Plug 'sphamba/smear-cursor.nvim'
 Plug 'startup-nvim/startup.nvim'
+Plug 'nvzone/minty'
+Plug 'stevearc/oil.nvim'
 vim.call('plug#end')

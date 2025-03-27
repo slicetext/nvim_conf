@@ -1,6 +1,5 @@
 require("snacks").setup({
     bigfile = { enabled = true },
-    explorer = { enabled = true, replace_netrw=true, layout={preset='sidebar'} },
     indent = { enabled = true },
     input = { enabled = true },
     image = { enabled = false },

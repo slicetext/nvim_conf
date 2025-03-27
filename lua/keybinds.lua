@@ -14,7 +14,7 @@ vim.keymap.set('x', '<leader>ce', "!xmodmap -e 'clear Lock' -e 'keycode 0x42 = E
 vim.keymap.set('x', '<leader>co', "!xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock")
 local Snacks = require("snacks")
 vim.keymap.set('n', '<leader>k', function()
-    Snacks.explorer.open();
+require('oil').toggle_float()
 end, { desc = "Open Explorer" })
 --telescope
 vim.keymap.set('n', '<leader>fo', function()
@@ -83,3 +83,8 @@ wk.add({
 vim.keymap.set('n', '<leader>bp', '<cmd>bprev<CR>', {desc="prev buffer"})
 vim.keymap.set('n', '<leader>bn', '<cmd>bnext<CR>', {desc="next buffer"})
 vim.keymap.set('n', '<leader>bc', '<cmd>bd<CR>', {desc="close buffer"})
+
+-- Color Picker
+vim.keymap.set('n', '<leader>cp',function()
+    require('minty.shades').open()
+end,{desc="color picker"})
