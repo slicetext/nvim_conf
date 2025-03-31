@@ -69,6 +69,13 @@ vim.keymap.set('n', '<leader>Gc', function()
     end)
 end, {desc="Commit"})
 vim.keymap.set('n', '<leader>Gp', "<cmd>! git push<CR>", {desc="Push"})
+
+-- Quick Fix
+vim.keymap.set('n', '<leader>qo', "<cmd>copen<cr>", {desc="Open Quick Fix"})
+vim.keymap.set('n', '<leader>qc', "<cmd>cclose<cr>", {desc="Close Quick Fix"})
+vim.keymap.set('n', '<leader>qn', "<cmd>cnext<cr>", {desc="Next Quick Fix"})
+vim.keymap.set('n', '<leader>qp', "<cmd>cprev<cr>", {desc="Prev Quick Fix"})
+
 -- Which Key
 wk.add({
     {"<leader>G",group="git"},
@@ -76,6 +83,7 @@ wk.add({
     {"<leader>b",group="buffers"},
     {"<leader>f",group="Picker"},
     {"<leader>l",group="LSP"},
+    {"<leader>q",group="Quick Fix"},
 })
 
 
